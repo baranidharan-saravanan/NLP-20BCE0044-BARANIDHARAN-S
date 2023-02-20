@@ -1,0 +1,87 @@
+NLP EXTRA TASK ON REGEX 
+NAME: BARANIDHARAN S
+REG.NO.: 20BCE0044
+GOAL: TO FIND 20 REGULAR EXPRESSIONS 
+
+
+BASIC EXAMPLES ON REGULAR EXPRESSION 
+
+1. Match any string that contains the word "hello":
+
+['hello']
+
+2. Match any string that starts with "hello":
+
+['^hello']
+
+3. Match any string that ends with "world":
+
+['world$']
+
+4. Match any string that contains either "hello" or "world":
+
+['hello'|'world']
+
+5. Match any string that contains two consecutive digits:
+
+[\d\d]
+
+6. Match any string that contains three or more consecutive vowels:
+
+[aeiou]{3,}
+
+7. Match any string that starts with a letter and is followed by one or more digits:
+
+[a-zA-Z]\d+
+
+8. Match a valid username in a website 
+
+^[a-zA-Z]\w{2,19}$
+
+9. To match atleast one special character 
+
+[@!#\$%\^&\*]
+
+10. Match a valid password in a website
+
+^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@!#\$%\^&\*])[a-zA-Z\d@!#\$%\^&\*]{n,}$
+
+11. Checking if a email id is valid or not 
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+12. Checking if the phone number is valid or not
+
+^\+?\d{1,3}[- ]?\d{3,4}[- ]?\d{4}$
+
+13. Checking if the credit card number is valid or not
+
+^(4|5[1-5]|6[0-9]|3[47])[0-9]{13,16}$
+
+14. Formatting a date from one format to another
+
+s/(\d{4})-(\d{2})-(\d{2})/$2\/$3\/$1/g
+
+15. Matching a valid URL
+
+^((?:http(?:s)?\:\/\/)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(?:\:[0-9]+)?(?:\/[\w\-]+)*(?:\/[\w\-]+\.([a-zA-Z]+))?(?:\?[^\s]+)?(?:#[^\s]+)?)$
+
+16. Matching a valid IP address 
+
+^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+
+17. Matching a valid XML tag
+
+<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)
+
+18. Matching a valid YYYY-MM-DD date format 
+
+^(?!0000)(?:\d{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|[1-2]\d|3[0-1])))$
+
+19. Matching a valid username with hypen and underscore only as special characters
+
+^[a-zA-Z0-9_-]{3,16}$
+
+20. Matching a valid time in HH:MM format
+
+^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$
